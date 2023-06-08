@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Daftar Talent - PukulEnam</title>
+    <link rel="shortcut icon" type="image" href="https://storage.googleapis.com/bangkit-c23-tr02-pukulenam-dataset/LogoPukulEnam.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header style="background-color: white;">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-center p-4">
+                <img src="https://storage.googleapis.com/bangkit-c23-tr02-pukulenam-dataset/LogoPukulEnam.png" alt="Logo" width="50" class="img-fluid me-3">
+                <h1 class="fw-bold fs-2 m-0" style="color:#F85F56">PukulEnam</h1>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Title -->
+        <section class="roleTalent p-1" style="background-color: #F85F56;">
+            <div class="container col-9">
+                <h1 class="display-6 fw-bold text-center m-5" style="color: #FFFFFF;">PUKULENAM TALENTS</h1>
+            </div>
+        </section>
+
+        <form>
+            <!-- Section for Talent Score Input -->
+            <section class="scoreTalent p-1" style="background-color: #F9FAEA;">
+                <div class="container">
+                    <div class="row">
+                        
+                        <!-- Talent Role Score Input -->
+                        <div class="col-6">
+                            <div class="container-fluid p-5 shadow rounded mb-5 mt-5 text-center" style="background-color: #FFFFFF;">
+                                <h2 class="display-6 fw-bold text-center mt-3 mb-5" style="color: #F85F56;">Talent Role</h2>
+                                <div class="form-group mb-3">
+                                    <p class="display-12 text-center mt-3 text-dark fs-3">Copywriting</p>
+                                    <input name="copywriting" type="range" class="form-range" min="0" max="5" step="0.01" id="range-slider-copywriting">
+                                    <output class="output" for="range-slider-copywriting" id="output-copywriting">0</output>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <p class="display-12 text-center mt-3 text-dark fs-3">Design</p>
+                                    <input name="design" type="range" class="form-range" min="0" max="5" step="0.01" id="range-slider-design">
+                                    <output class="output" for="range-slider-design" id="output-design">0</output>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Talent Level Score Input -->
+                        <div class="col-6">
+                            <div class="container-fluid p-5 shadow rounded mb-5 mt-5 text-center" style="background-color: #FFFFFF;">
+                                <h2 class="display-6 fw-bold text-center mt-3 mb-5" style="color: #F85F56;">Talent Level</h2>
+                                <div class="form-group mb-3">
+                                    <p class="display-12 text-center mt-3 text-dark fs-3">Internasional</p>
+                                    <input name="internasional" type="range" class="form-range" min="0" max="5" step="0.01" id="range-slider-internasional">
+                                    <output class="output" for="range-slider-internasional" id="output-internasional">0</output>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <p class="display-12 text-center mt-3 text-dark fs-3">Nasional</p>
+                                    <input name="nasional" type="range" class="form-range" min="0" max="5" step="0.01" id="range-slider-nasional">
+                                    <output class="output" for="range-slider-nasional" id="output-nasional">0</output>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Talent Skills Score Input -->
+                        <div class="container-fluid p-5 shadow rounded mb-5 mt-1 text-center" style="background-color: #FFFFFF;">
+                            <h2 class="display-6 fw-bold text-center mt-3 mb-5" style="color: #F85F56;">Talent Skills</h2>
+                            <div class="row">
+                                <!-- Left Side -->
+                                <div class="col-6">
+                                    <div class="form-group mb-5">
+                                        <p class="display-12 text-center mt-3 text-dark fs-3">Entertainment</p>
+                                        <input name="entertainment" type="range" class="form-range" min="0" max="5" step="0.01" id="range-slider-entertainment">
+                                        <output class="output" for="range-slider-entertainment" id="output-entertainment">0</output>
+                                    </div>
+                                    <div class="form-group mb-5">
+                                        <p class="display-12 text-center mt-5 text-dark fs-3">Gaming</p>
+                                        <input name="gaming" type="range" class="form-range" min="0" max="5" step="0.01" id="range-slider-gaming">
+                                        <output class="output" for="range-slider-gaming" id="output-gaming">0</output>
+                                    </div>
+                                    <div class="form-group mb-5">
+                                        <p class="display-12 text-center mt-5 text-dark fs-3">Technology</p>
+                                        <input name="technology" type="range" class="form-range" min="0" max="5" step="0.01" id="range-slider-tech">
+                                        <output class="output" for="range-slider-tech" id="output-tech">0</output>
+                                    </div>
+                                </div>
+                                <!-- Right Side -->
+                                <div class="col-6">
+                                    <div class="form-group mb-5">
+                                        <p class="display-12 text-center mt-3 text-dark fs-3">Finance</p>
+                                        <input name="finance" type="range" class="form-range" min="0" max="5" step="0.01" id="range-slider-finance">
+                                        <output class="output" for="range-slider-finance" id="output-finance">0</output>
+                                    </div>
+                                    <div class="form-group mb-5">
+                                        <p class="display-12 text-center mt-5 text-dark fs-3">Health</p>
+                                        <input name="health" type="range" class="form-range" min="0" max="5" step="0.01" id="range-slider-health">
+                                        <output class="output" for="range-slider-health" id="output-health">0</output>
+                                    </div>
+                                    <div class="form-group mb-5">
+                                        <p class="display-12 text-center mt-5 text-dark fs-3">Sports</p>
+                                        <input name="sport" type="range" class="form-range" min="0" max="5" step="0.01" id="range-slider-sport">
+                                        <output class="output" for="range-slider-sport" id="output-sport">0</output>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Button "Cari Talent" -->
+                <div class="text-center container mb-4 mt-2">
+                    <button type="button" class="btn-submit-form btn px-5 rounded-pill btn-headTopic fs-3">Cari Talent</button>
+                </div>
+            </section>
+        </form>
+        
+        <!-- Talent Profile Output -->
+        <section class="profilTalent p-1" style="background-color: #F85F56;">
+            <div class="container p-4">
+                <h2 class="display-4 fw-bold text-center mt-6" style="color: white;">TALENTS</h2>
+                <div class="row">
+                    <div class="col-md-4 mt-5 mb-5">
+                        <img id="img1" class="img-fluid">
+                    </div>
+                    <div class="col-md-4 mt-5 mb-5">
+                        <img id="img2" class="img-fluid">
+                    </div>
+                    <div class="col-md-4 mt-5 mb-5">
+                        <img id="img3" class="img-fluid">
+                    </div>  
+                </div>
+            </div>
+        </section>
+        </main>
+
+    <!-- Footer -->
+    <footer style="background-color: white;">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 mt-3 text-center text-light">
+                    <p style="color:#000000FA;">© 2022 <b>PukulEnam</b></p>
+                </div>
+                <div class="col-6 mt-3 text-center text-light">
+                    <p style="color:#000000FA;">Powered by <b>Amazon Web Services</b></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Call JavaScript File -->
+    <script src="JavaScript/main.js"></script>
+</body>
+</html>

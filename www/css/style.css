@@ -1,0 +1,84 @@
+/* warna titik slider */
+#range-slider-copywriting::-webkit-slider-thumb {
+    background-color: black; 
+}
+#range-slider-design::-webkit-slider-thumb {
+    background-color: black; 
+}
+
+#range-slider-internasional::-webkit-slider-thumb {
+    background-color: black; 
+}
+#range-slider-nasional::-webkit-slider-thumb {
+    background-color: black; 
+}
+
+#range-slider-entertainment::-webkit-slider-thumb {
+    background-color: black; 
+}
+#range-slider-gaming::-webkit-slider-thumb {
+    background-color: black; 
+}
+#range-slider-tech::-webkit-slider-thumb {
+    background-color: black; 
+}
+#range-slider-finance::-webkit-slider-thumb {
+    background-color: black; 
+}
+#range-slider-health::-webkit-slider-thumb {
+    background-color: black; 
+}
+#range-slider-sport::-webkit-slider-thumb {
+    background-color: black; 
+}
+
+/* warna garis slider */
+#range-slider-copywriting::-webkit-slider-runnable-track {
+    background-color: #F85F56;
+}
+#range-slider-design::-webkit-slider-runnable-track {
+    background-color: #F85F56;
+}
+
+#range-slider-internasional::-webkit-slider-runnable-track {
+    background-color: #F85F56;
+}
+#range-slider-nasional::-webkit-slider-runnable-track {
+    background-color: #F85F56;
+}
+
+#range-slider-entertainment::-webkit-slider-runnable-track {
+    background-color: #F85F56;
+}
+#range-slider-gaming::-webkit-slider-runnable-track {
+    background-color: #F85F56;
+}
+#range-slider-tech::-webkit-slider-runnable-track {
+    background-color: #F85F56;
+}
+#range-slider-finance::-webkit-slider-runnable-track {
+    background-color: #F85F56;
+}
+#range-slider-health::-webkit-slider-runnable-track {
+    background-color: #F85F56;
+}
+#range-slider-sport::-webkit-slider-runnable-track {
+    background-color: #F85F56;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.btn-headTopic{
+    background-color: #F85F56;
+    color: white;
+}
+
+.btn-headTopic:hover{
+    background-color: white;
+    color: #F85F56;
+    border: 1px solid #F85F56;
+}
