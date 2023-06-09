@@ -27,7 +27,7 @@ This is the step to implement the mockup into the front-end web page of our tale
     - Enter the code to give the block of functions after the "Cari Talent" button is pressed by the user.
     
 ## Deployment
-This is the step to upload the dataset of photos into cloud storage and deploy the application using App Engine.
+### This is the step to upload the dataset of photos into cloud storage.
 1. Open the Google Cloud Console.
 2. Create a new project.
 You've entered a project name, organization, and location. This is our data:
@@ -44,5 +44,23 @@ Location Type: Region [ asia-southeast2 (Jakarta) ]
 - Choose how to control access to objects.
 Uncheck "Enforce public access prevention on this bucket"
 - Set everything else as default, and click Create.
-6. Open the bucket name "bangkit-c23-tr02-pukulenam-dataset" and create a folder with the name "talentPicture".
-7. Upload the "LogoPukulEnam.png" file in the bucket and upload the talent photo in the "talentPicture" name folder.
+6. Click the three dots in your bucket and then click "Edit Access" so that each photo has a URL that can be placed in the ML dataset.
+- Click "Add Principal."
+- In Add Principal, enter "all Users" and "all Authenticated Users."
+- Assign role, select role: Storage Object Viewer
+- Click save.
+7. Open the bucket name "bangkit-c23-tr02-pukulenam-dataset" and create a folder with the name "talentPicture".
+8. Upload the "LogoPukulEnam.png" file in the bucket and upload the talent photo in the "talentPicture" name folder.
+9. Copy the URL of each photo to dataset ML.
+### This is the step to deploy the application using App Engine.
+1. Open the Google Cloud Console.
+2. Activate Cloud Shell.
+3. Clone the project from GitHub, including the app.yaml file.
+4. Make sure it is in the folder containing the app.yaml file, then deploy the web using the code below.
+```
+gcloud app deploy
+```
+5. Then, open the web using the code below.
+```
+gcloud app browse
+```
