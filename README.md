@@ -61,7 +61,7 @@ This is the step to implement the mockup into the front-end web page of our tale
          ...
       </header>
       ```
-    - In the **main** tag contains the main content of the web page. In this example there are several sections such as content titles, forms in the form of range sliders to get user input, then there are buttons as triggers to perform functions in javascript files, and finally there is a section to display the output of data processing in the form of photos of talent.
+    - In the **main** tag contains the main content of the web page. In this example there are several sections such as content title, forms in the form of range sliders to get user input, then there are button as trigger to perform functions in javascript file, and finally there is a section to display the output of data processing in the form of photos of talent.
 
       ```
       <main>
