@@ -1,4 +1,4 @@
-/* warna titik slider */
+/* Color of slider dot */
 #range-slider-copywriting::-webkit-slider-thumb {
     background-color: black; 
 }
@@ -32,7 +32,7 @@
     background-color: black; 
 }
 
-/* warna garis slider */
+/* Color of the slider line */
 #range-slider-copywriting::-webkit-slider-runnable-track {
     background-color: #F85F56;
 }
