@@ -18,7 +18,37 @@ This is the step to implement the mockup into the front-end web page of our tale
 1. Create a file index.html
 ....
 2. Create a file style.css in folder css
-....
+   - Create the style for the slider, including the color of the slide dot and slider line.
+        ```
+        #range-slider-copywriting::-webkit-slider-thumb {
+        background-color: black; 
+        }
+        ...
+        #range-slider-sport::-webkit-slider-runnable-track {
+        background-color: #F85F56;
+        }
+        ```
+    - Create the style for the button "Cari Talent."
+        ```
+        .btn-headTopic{
+        background-color: #F85F56;
+        color: white;
+        }
+        .btn-headTopic:hover{
+        background-color: white;
+        color: #F85F56;
+        border: 1px solid #F85F56;
+        }
+        ```
+    - Create the style of the webpage.
+        ```
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        ```
+
 3. Create a file main.js in folder JavaScript
     Here's what to do in this file:
     - Enter the code from the ML team to define the talent dataset from the newsroom talent of Pukul Enam.
