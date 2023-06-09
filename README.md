@@ -18,7 +18,7 @@ This is the step to implement the mockup into the front-end web page of our tale
 1. Create a file index.html
 This is the main page of the website. Some of the important elements we use:
 
-   - In the <head> tag. there are <link> and <script> tags which are used to link several external files such as css files, JavaScript, and also the Bootstrap framework so that they can be linked to each other with the Index.html file
+   - In the "<head>" tag. there are "<link>" and <script> tags which are used to link several external files such as css files, JavaScript, and also the Bootstrap framework so that they can be linked to each other with the Index.html file
    ```
    <head>
       ...
