@@ -83,17 +83,17 @@ This is the step to implement the mockup into the front-end web page of our tale
                <button type="button" class="btn-submit-form btn px-5 rounded-pill btn-headTopic fs-3">Cari Talent</button>
                ...
          </form>
-      <section>
+         <section>
          ...
-         <h2 class="display-4 fw-bold text-center mt-6" style="color: white;">TALENTS</h2>
-            <div class="row">
-               <div class="col-md-4 mt-5 mb-5">
-                  <img id="img1" class="img-fluid">
+            <h2 class="display-4 fw-bold text-center mt-6" style="color: white;">TALENTS</h2>
+               <div class="row">
+                  <div class="col-md-4 mt-5 mb-5">
+                     <img id="img1" class="img-fluid">
+                  </div>
+                  ...
                </div>
                ...
-            </div>
-            ...
-      </section>
+         </section>
       </main>
       ```
     - in the <footer> tag contains company copyright information.
