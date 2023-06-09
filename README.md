@@ -21,10 +21,28 @@ This is the step to implement the mockup into the front-end web page of our tale
 ....
 3. Create a file main.js in folder JavaScript
     Here's what to do in this file:
-    1. Enter the code from the ML team to define the talent dataset from the newsroom talent of Pukul Enam.
-    2. Declare a variable using let with the name talentInputs to set all parameter values to 0 before the user inputs the data.
-    3. Enter the user input value into the talentInputs variable according to the respective parameters in each slider.
-    4. Enter the code to give the block of functions after the "Cari Talent" button is pressed by the user.
+    - Enter the code from the ML team to define the talent dataset from the newsroom talent of Pukul Enam.
+    - Declare a variable using let with the name talentInputs to set all parameter values to 0 before the user inputs the data.
+    - Enter the user input value into the talentInputs variable according to the respective parameters in each slider.
+    - Enter the code to give the block of functions after the "Cari Talent" button is pressed by the user.
     
 ## Deployment
 This is the step to upload the dataset of photos into cloud storage and deploy the application using App Engine.
+1. Open the Google Cloud Console.
+2. Create a new project.
+You've entered a project name, organization, and location. This is our data:
+- Project name: Bangkit-C23-TR02-PukulEnam
+- Organization: bangkit.academy
+- Location: bangkit.academy
+3. Connect project billing. In this case, we used credit from Bangkit.
+4. Click "Cloud Storage" in the navigation menu.
+5. Create a bucket in cloud storage.
+You've entered the criteria in your bucket. This is our criteria:
+- Name your bucket: bangkit-c23-tr02-pukulenam-dataset
+- Choose where to save your data.
+Location Type: Region [ asia-southeast2 (Jakarta) ]
+- Choose how to control access to objects.
+Uncheck "Enforce public access prevention on this bucket"
+- Set everything else as default, and click Create.
+6. Open the bucket name "bangkit-c23-tr02-pukulenam-dataset" and create a folder with the name "talentPicture".
+7. Upload the "LogoPukulEnam.png" file in the bucket and upload the talent photo in the "talentPicture" name folder.
