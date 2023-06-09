@@ -17,7 +17,7 @@ This is our project for a talent recommendation system for the newsroom, Pukul E
 This is the step to implement the mockup into the front-end web page of our talent recommender system.
 1. Create a file index.html
    This is the main page of the website. Some of the important elements we use:
-    - In the **head** tag. there are **link** and **script** tags which are used to link several external files such as css files, JavaScript, and also the Bootstrap framework so that they can be linked to each other with the Index.html file.
+    - In the **head** tag, there are **link** and **script** tags, which are used to link several external files, such as css files, JavaScript, and the Bootstrap framework, so that they can be linked to each other with the Index.html file.
       ```
       <head>
       ...
@@ -27,7 +27,7 @@ This is the step to implement the mockup into the front-end web page of our tale
       ...
       </head>
       ```
-    - In the **Body** tag contains the header, title and some important parts.
+    - The **body** tag contains the header, title, and some important parts.
       ```
       <body>
          <header>
@@ -51,7 +51,7 @@ This is the step to implement the mockup into the front-end web page of our tale
          ...
       </body>
       ```
-    - In the **header** tag is used to create a header on the website that contains the logo and company name.
+    - The **header** tag is used to create a header on the website that contains the logo and company name.
 
       ```
       <header>
@@ -61,7 +61,7 @@ This is the step to implement the mockup into the front-end web page of our tale
          ...
       </header>
       ```
-    - In the **main** tag contains the main content of the web page. In this example there are several sections such as content title, forms in the form of range sliders to get user input, then there are button as trigger to perform functions in javascript file, and finally there is a section to display the output of data processing in the form of photos of talent.
+    - The **main** tag contains the main content of the web page. In this example, there are several sections, such as the content title, forms in the form of range sliders to get user input, buttons as triggers to perform functions in a javascript file, and finally a section to display the output of data processing in the form of photos of talent.
 
       ```
       <main>
@@ -97,7 +97,7 @@ This is the step to implement the mockup into the front-end web page of our tale
          </section>
       </main>
       ```
-    - in the **Footer** tag contains company copyright information.
+    - The **footer** tag contains company copyright information.
 
       ```
       <footer>
