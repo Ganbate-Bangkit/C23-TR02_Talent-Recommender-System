@@ -22,9 +22,34 @@ This is the step to implement the mockup into the front-end web page of our tale
 3. Create a file main.js in folder JavaScript
     Here's what to do in this file:
     - Enter the code from the ML team to define the talent dataset from the newsroom talent of Pukul Enam.
+       ```
+       const talentValues = {
+       ...
+       }
+      ```
     - Declare a variable using let with the name talentInputs to set all parameter values to 0 before the user inputs the data.
+      ```
+       let talentInputs = {
+        copywriting: 0,
+        design: 0,
+        internasional: 0,
+        ....
+       }
+      ```
     - Enter the user input value into the talentInputs variable according to the respective parameters in each slider.
+      ```
+      document.getElementById("range-slider-internasional").addEventListener("input", function () {
+      talentInputs.internasional = this.value;
+      document.getElementById("output-internasional").textContent = this.value;
+      });
+      ....
+      ```
     - Enter the code to give the block of functions after the "Cari Talent" button is pressed by the user.
+      ```
+       document.querySelector('.btn-submit-form').addEventListener('click', async function() {
+       ...
+       });
+      ```
     
 ## Deployment
 ### This is the step to upload the dataset of photos into cloud storage.
