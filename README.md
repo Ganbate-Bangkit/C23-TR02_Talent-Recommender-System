@@ -27,7 +27,7 @@ This is the step to implement the mockup into the front-end web page of our tale
       ...
       </head>
       ```
-    - In the <body> tag contains the header, title and some important parts.
+    - In the **Body** tag contains the header, title and some important parts.
       ```
       <body>
          <header>
@@ -51,7 +51,7 @@ This is the step to implement the mockup into the front-end web page of our tale
          ...
       </body>
       ```
-    - In the <header> tag is used to create a header on the website that contains the logo and company name.
+    - In the **header** tag is used to create a header on the website that contains the logo and company name.
 
       ```
       <header>
@@ -61,7 +61,7 @@ This is the step to implement the mockup into the front-end web page of our tale
          ...
       </header>
       ```
-    - In the <main> tag contains the main content of the web page. In this example there are several sections such as content titles, forms in the form of range sliders to get user input, then there are buttons as triggers to perform functions in javascript files, and finally there is a section to display the output of data processing in the form of photos of talent.
+    - In the **main** tag contains the main content of the web page. In this example there are several sections such as content titles, forms in the form of range sliders to get user input, then there are buttons as triggers to perform functions in javascript files, and finally there is a section to display the output of data processing in the form of photos of talent.
 
       ```
       <main>
@@ -96,7 +96,7 @@ This is the step to implement the mockup into the front-end web page of our tale
          </section>
       </main>
       ```
-    - in the <footer> tag contains company copyright information.
+    - in the **Footer** tag contains company copyright information.
 
       ```
       <footer>
