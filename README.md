@@ -17,9 +17,14 @@ This is our project for a talent recommendation system for the newsroom, Pukul E
 This is the step to implement the mockup into the front-end web page of our talent recommender system.
 1. Create a file index.html
 ....
-3. Create a file style.css in folder css
+2. Create a file style.css in folder css
 ....
-5. Create a file main.js in folder JavaScript
-
+3. Create a file main.js in folder JavaScript
+    Here's what to do in this file:
+    1. Enter the code from the ML team to define the talent dataset from the newsroom talent of Pukul Enam.
+    2. Declare a variable using let with the name talentInputs to set all parameter values to 0 before the user inputs the data.
+    3. Enter the user input value into the talentInputs variable according to the respective parameters in each slider.
+    4. Enter the code to give the block of functions after the "Cari Talent" button is pressed by the user.
+    
 ## Deployment
-
+This is the step to upload the dataset of photos into cloud storage and deploy the application using App Engine.
