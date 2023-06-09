@@ -17,8 +17,7 @@ This is our project for a talent recommendation system for the newsroom, Pukul E
 This is the step to implement the mockup into the front-end web page of our talent recommender system.
 1. Create a file index.html
    This is the main page of the website. Some of the important elements we use:
-    - In the **head** tag. there are **link** and **script** tags which are used to link several external files such as css files, JavaScript, and also the
-      Bootstrap framework so that they can be linked to each other with the Index.html file
+    - In the **head** tag. there are **link** and **script** tags which are used to link several external files such as css files, JavaScript, and also the Bootstrap framework so that they can be linked to each other with the Index.html file.
       ```
       <head>
       ...
@@ -28,6 +27,87 @@ This is the step to implement the mockup into the front-end web page of our tale
       ...
       </head>
       ```
+    - In the <body> tag contains the header, title and some important parts.
+      ```
+      <body>
+         <header>
+            ...
+         </header>
+         <main>
+            ...
+            <form>
+               ...
+               <section>
+                  ...
+               </section>
+               ...
+               <button></button>
+               ...
+            </form>
+         </main>
+         <footer>
+            ...
+         </footer>
+         ...
+      </body>
+      ```
+    - In the <header> tag is used to create a header on the website that contains the logo and company name.
+
+      ```
+      <header>
+         ...
+         <img src="..." ...>
+         <h1 ...>PukulEnam<h1>
+         ...
+      </header>
+      ```
+    - In the <main> tag contains the main content of the web page. In this example there are several sections such as content titles, forms in the form of range sliders to get user input, then there are buttons as triggers to perform functions in javascript files, and finally there is a section to display the output of data processing in the form of photos of talent.
+
+      ```
+      <main>
+         <section>
+            ...
+            <h1>PukulEnam Talents</h1>
+            ...
+         </section>
+         <form>
+            <section>
+               ...
+               <h2 class="display-6 fw-bold text-center mt-3 mb-5" style="color: #F85F56;">Talent Role</h2>
+               <div class="form-group mb-3">
+                  <p class="display-12 text-center mt-3 text-dark fs-3">Copywriting</p>
+                  <input name="copywriting" type="range" class="form-range" min="0" max="5" step="0.01" id="range-slider-copywriting">
+                  <output class="output" for="range-slider-copywriting" id="output-copywriting">0</output>
+                </div>
+               ...
+               <button type="button" class="btn-submit-form btn px-5 rounded-pill btn-headTopic fs-3">Cari Talent</button>
+               ...
+         </form>
+      <section>
+         ...
+         <h2 class="display-4 fw-bold text-center mt-6" style="color: white;">TALENTS</h2>
+            <div class="row">
+               <div class="col-md-4 mt-5 mb-5">
+                  <img id="img1" class="img-fluid">
+               </div>
+               ...
+            </div>
+            ...
+      </section>
+      </main>
+      ```
+    - in the <footer> tag contains company copyright information.
+
+      ```
+      <footer>
+         ...
+         <div class="col-6 mt-3 text-center text-light">
+            <p style="color:#000000FA;">© 2022 <b>PukulEnam</b></p>
+         </div>
+         ...
+      </footer>
+      ```
+   
 2. Create a file style.css in folder css
    - Create the style for the slider, including the color of the slide dot and slider line.
         ```
