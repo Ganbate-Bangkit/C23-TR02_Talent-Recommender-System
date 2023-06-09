@@ -3,8 +3,90 @@ This is our project for a talent recommendation system for the newsroom, Pukul E
 
 # Documentation Machine Learning
 ## Dataset
+1. Talent Values
+   We have 14 talent's values from PukulEnam. The value in range 0 to 5 represent expertise of talent in each categories.
+   - Talent role (copywriting, design)
+   - Talent level (international, national)
+   - Talent skill ( entertainment, gaming, tech, finance, health, sport)
+2. Talent Images
+   We also got the talent images from pukulEnam.
 ## Data Preprocesing
-## Model
+1. Talent Values
+   For talent values, all of the data provided by pukulenam  
+2. Talent Images
+   - Remove background of the images
+   - Crop images
+   - Convert to 1080 x 1350 px size
+## Build System 
+1. Create "calculateDistance" function  
+   - Define function with 2 parameters: 'inputValues' and 'talentValues'
+     ```
+     function calculateDistance(inputValues, talentValues) {}
+     ```
+   - Make an empty array
+     ```   
+     let distances = [];
+     ```
+   - Returns array of key-value pairs from the talentValues object
+     ```
+     for (const [talentImage, talentScores] of Object.entries(talentValues)) {}
+     ```
+   - Compute the squared difference between input and talent value
+     ```
+     let distance = 0;
+        for (let i = 0; i < inputValues.length; i++) {
+          distance += Math.pow(inputValues[i] - talentScores[i], 2);
+        }
+     ```
+   - Compute the square root
+     ```
+     distance = Math.sqrt(distance);
+     ```
+   - Add to distances list/array
+     ```  
+       distances.push({ talentImage, distance }); 
+      }
+     ```
+   - Compute the squared difference between input and talent value
+     ```
+     distances.sort((a, b) => a.distance - b.distance);
+     const talentUrl1 = distances[0].talentImage;
+     const talentUrl2 = distances[1].talentImage;
+     const talentUrl3 = distances[2].talentImage; 
+     ```
+   - Return the top 3 closest talents
+     ```
+     return { talentUrl1, talentUrl2, talentUrl3 }; 
+     ```
+2. Call the calculateDistance function directly
+   ```
+   const { talentUrl1, talentUrl2, talentUrl3 } = calculateDistance(
+    [
+      talentInputs.copywriting,
+      talentInputs.design,
+      talentInputs.nasional,
+      talentInputs.internasional,
+      talentInputs.entertainment,
+      talentInputs.gaming,
+      talentInputs.tech,
+      talentInputs.finance,
+      talentInputs.health,
+      talentInputs.sport
+    ],
+    talentValues
+   ```
+3. Get the image elements by their IDs
+   ```
+   var img1 = document.getElementById('img1');
+   var img2 = document.getElementById('img2');
+   var img3 = document.getElementById('img3');
+   ```
+4. Update the src attributes of the image elements
+   ```
+   img1.src = talentUrl1;
+   img2.src = talentUrl2;
+   img3.src = talentUrl3;
+   ```  
 
 # Documentation Cloud Computing
 ## Mockup
@@ -16,99 +98,18 @@ This is our project for a talent recommendation system for the newsroom, Pukul E
 ## Front-End
 This is the step to implement the mockup into the front-end web page of our talent recommender system.
 1. Create a file index.html
-   This is the main page of the website. Some of the important elements we use:
-    - In the **head** tag, there are **link** and **script** tags, which are used to link several external files, such as css files, JavaScript, and the Bootstrap framework, so that they can be linked to each other with the Index.html file.
-      ```
-      <head>
+This is the main page of the website. Some of the important elements we use:
+
+   - In the <head> tag. there are <link> and <script> tags which are used to link several external files such as css files, JavaScript, and also the Bootstrap framework so that they can be linked to each other with the Index.html file
+   ```
+   <head>
       ...
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
       <link rel="stylesheet" href="css/style.css">
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
       ...
-      </head>
-      ```
-    - The **body** tag contains the header, title, and some important parts.
-      ```
-      <body>
-         <header>
-            ...
-         </header>
-         <main>
-            ...
-            <form>
-               ...
-               <section>
-                  ...
-               </section>
-               ...
-               <button></button>
-               ...
-            </form>
-         </main>
-         <footer>
-            ...
-         </footer>
-         ...
-      </body>
-      ```
-    - The **header** tag is used to create a header on the website that contains the logo and company name.
+    </head>
 
-      ```
-      <header>
-         ...
-         <img src="..." ...>
-         <h1 ...>PukulEnam<h1>
-         ...
-      </header>
-      ```
-    - The **main** tag contains the main content of the web page. In this example, there are several sections, such as the content title, forms in the form of range sliders to get user input, buttons as triggers to perform functions in a javascript file, and finally a section to display the output of data processing in the form of photos of talent.
-
-      ```
-      <main>
-         <section>
-            ...
-            <h1>PukulEnam Talents</h1>
-            ...
-         </section>
-         <form>
-            <section>
-               ...
-               <h2 class="display-6 fw-bold text-center mt-3 mb-5" style="color: #F85F56;">Talent Role</h2>
-               <div class="form-group mb-3">
-                  <p class="display-12 text-center mt-3 text-dark fs-3">Copywriting</p>
-                  <input name="copywriting" type="range" class="form-range" min="0" max="5" step="0.01" id="range-slider-copywriting">
-                  <output class="output" for="range-slider-copywriting" id="output-copywriting">0</output>
-                </div>
-               ...
-               <button type="button" class="btn-submit-form btn px-5 rounded-pill btn-headTopic fs-3">Cari Talent</button>
-               ...
-            </section>
-         </form>
-         <section>
-         ...
-            <h2 class="display-4 fw-bold text-center mt-6" style="color: white;">TALENTS</h2>
-               <div class="row">
-                  <div class="col-md-4 mt-5 mb-5">
-                     <img id="img1" class="img-fluid">
-                  </div>
-                  ...
-               </div>
-               ...
-         </section>
-      </main>
-      ```
-    - The **footer** tag contains company copyright information.
-
-      ```
-      <footer>
-         ...
-         <div class="col-6 mt-3 text-center text-light">
-            <p style="color:#000000FA;">© 2022 <b>PukulEnam</b></p>
-         </div>
-         ...
-      </footer>
-      ```
-   
 2. Create a file style.css in folder css
    - Create the style for the slider, including the color of the slide dot and slider line.
         ```
