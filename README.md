@@ -11,7 +11,7 @@ This is our project for a talent recommendation system for the newsroom, Pukul E
 1. Create a website design to display talent recommendations according to the input entered by the user. The tool we use to create a website display mockup is Figma.
 2. Choose from the various components included in Figma to create your design.
 3. This is a design we made at Figma.
-![mockupWeb](https://github.com/Ganbate-Bangkit/C23-TR02_Talent-Recommender-System/assets/75134254/cefe02d8-156e-4737-ae73-a8b056bdff0b)
+![mockupWeb](https://github.com/Ganbate-Bangkit/C23-TR02_Talent-Recommender-System/assets/75134254/f1685c37-31a4-46a1-a0fc-4d370cc23377)
 
 ## Front-End
 This is the step to implement the mockup into the front-end web page of our talent recommender system.
