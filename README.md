@@ -34,6 +34,7 @@ This is the step to implement the mockup into the front-end web page of our tale
         design: 0,
         internasional: 0,
         ....
+        sport: 0,
        }
       ```
     - Enter the user input value into the talentInputs variable according to the respective parameters in each slider.
@@ -43,6 +44,10 @@ This is the step to implement the mockup into the front-end web page of our tale
       document.getElementById("output-internasional").textContent = this.value;
       });
       ....
+      document.getElementById("range-slider-sport").addEventListener("input", function () {
+      talentInputs.sport = this.value;
+      document.getElementById("output-sport").textContent = this.value;
+      });
       ```
     - Enter the code to give the block of functions after the "Cari Talent" button is pressed by the user.
       ```
