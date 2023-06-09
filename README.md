@@ -16,18 +16,18 @@ This is our project for a talent recommendation system for the newsroom, Pukul E
 ## Front-End
 This is the step to implement the mockup into the front-end web page of our talent recommender system.
 1. Create a file index.html
-This is the main page of the website. Some of the important elements we use:
-
-   - In the "<head>" tag. there are "<link>" and <script> tags which are used to link several external files such as css files, JavaScript, and also the Bootstrap framework so that they can be linked to each other with the Index.html file
-   ```
-   <head>
+   This is the main page of the website. Some of the important elements we use:
+    - In the "<head>" tag. there are "<link>" and <script> tags which are used to link several external files such as css files, JavaScript, and also the
+      Bootstrap framework so that they can be linked to each other with the Index.html file
+      ```
+      <head>
       ...
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
       <link rel="stylesheet" href="css/style.css">
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
       ...
-    </head>
-
+      </head>
+      ```
 2. Create a file style.css in folder css
    - Create the style for the slider, including the color of the slide dot and slider line.
         ```
